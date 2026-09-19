@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+  <title>Datenschutz · ChatGPT - MEG Kanalberatung</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div class="wrap"><a class="brand" href="index.html">MiniEmployeeGaming</a><nav aria-label="Hauptnavigation"><a href="index.html">Anwendung</a><a href="datenschutz.html" aria-current="page">Datenschutz</a><a href="nutzung.html">Nutzungsbedingungen</a></nav></div></header>
+  <main class="wrap">
+    <p class="eyebrow">Umgang mit Daten</p><h1>Datenschutzhinweise</h1>
+    <p class="intro">Diese Hinweise beschreiben den Datenfluss der persönlichen Anwendung „ChatGPT - MEG Kanalberatung“ und ihrer Informationsseiten.</p>
+    <h2>1. Verantwortlicher und Kontakt</h2>
+    <p>Kevin Gatys · Projekt MiniEmployeeGaming<br>Kontakt: <a href="mailto:meg_gaming@posteo.eu">meg_gaming@posteo.eu</a></p>
+    <h2>2. Google-Anmeldung und Berechtigungen</h2>
+    <p>Die Anmeldung findet bei Google statt. Die Anwendung erhält keinen Zugriff auf das Google-Passwort. Nach Zustimmung erhält sie OAuth-Tokens zum Abrufen der freigegebenen Daten und zum Erneuern des Zugangs.</p>
+    <ul><li><code>youtube.readonly</code>: Kanal-, Video- und Playlist-Daten lesen.</li><li><code>yt-analytics.readonly</code>: freigegebene YouTube-Analytics-Berichte lesen.</li></ul>
+    <p>Die Anwendung nutzt die YouTube Data API und die YouTube Analytics API. Die erteilten Leserechte erlauben keine Änderungen oder Löschungen auf YouTube.</p>
+    <h2>3. Welche Daten verarbeitet werden</h2>
+    <p>Der Import umfasst Kanalangaben, Video- und Playlist-Metadaten, darunter Titel, Beschreibungen, Tags, Thumbnail-Adressen und Veröffentlichungs- bzw. Sichtbarkeitsangaben. Je nach Freigabe und API-Antwort können auch nicht öffentliche Inhalte des eigenen Kanals enthalten sein.</p>
+    <p>Analytics-Berichte enthalten Aufrufe, Wiedergabezeit, durchschnittliche Wiedergabedauer, Interaktionszahlen und Abonnentenentwicklung sowie Aufschlüsselungen nach Video, Tag, Land, Zugriffsquelle und Inhaltstyp. Länderangaben sind aggregierte Berichte; es werden keine einzelnen Zuschauer identifiziert. Kommentartexte, Transkripte und Umsatzdaten werden in der aktuellen Version nicht importiert.</p>
+    <h2>4. Zweck und Weitergabe</h2>
+    <p>Die Daten dienen ausschließlich der beauftragten Analyse des eigenen Kanals und der Planung von Inhalten. Der Importer ruft Daten direkt von Google ab und speichert sie auf dem lokalen PC. Er enthält keinen eigenen OpenAI-API-Aufruf.</p>
+    <p>Wird Codex mit der Auswertung der lokalen Dateien beauftragt, können die dafür gelesenen Inhalte als Kontext an OpenAI übermittelt und dort verarbeitet werden. Eine Codex-Beratung ist daher keine ausschließlich lokale Verarbeitung. Umfang, Aufbewahrung und Datenkontrollen richten sich nach dem verwendeten OpenAI-Produkt, dem Konto und dessen Einstellungen. Google-Tokens und Client-Geheimnisse gehören nicht in diesen Beratungskontext.</p>
+    <p>Informationen dazu, welche Kontoeinstellungen bei Codex gelten, enthält die <a href="https://learn.chatgpt.com/docs/auth">OpenAI-Dokumentation zur Anmeldung und Datenverarbeitung</a>. Der Betreiber nutzt importierte Google-Daten nur für die beauftragte Kanalauswertung und nicht zum Aufbau eigener Trainingsdatensätze.</p>
+    <p>Die Anwendung verkauft keine Google-Nutzerdaten und verwendet sie nicht für Werbung. Eine Nutzung oder Weitergabe ist auf die hier beschriebenen Funktionen und die Freigabe des Nutzers beschränkt. Maßgeblich sind die <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy einschließlich der Limited-Use-Anforderungen</a> und die <a href="https://developers.google.com/youtube/terms/developer-policies">YouTube API Developer Policies</a>.</p>
+    <h2>5. Lokale Speicherung und Aufbewahrung</h2>
+    <p>OAuth-Tokens werden mit Windows-DPAPI für das aktuelle Windows-Konto verschlüsselt gespeichert. Die OAuth-Client-Konfiguration bleibt eine lokale Konfigurationsdatei. Importierte Kanal- und Analytics-Daten liegen lokal als JSON vor; diese Datendatei wird durch den Importer nicht zusätzlich verschlüsselt.</p>
+    <p>Jeder erfolgreiche Import ersetzt den vorherigen Datenstand. Vor API-Vorgängen entfernt die Anwendung einen mindestens 30 Tage alten lokalen Datenstand. Während die Anwendung nicht läuft, findet keine automatische Bereinigung statt. Ältere Daten müssen vor weiterer Verwendung gelöscht oder neu abgerufen werden.</p>
+    <h2>6. Zugriff widerrufen und Daten löschen</h2>
+    <p>Die Freigabe lässt sich unter <a href="https://myaccount.google.com/connections">Verbindungen im Google-Konto</a> widerrufen. Dadurch werden bereits gespeicherte lokale Daten nicht automatisch entfernt.</p>
+    <p>In der lokalen Anwendung löscht die Funktion <code>purge</code> die importierten API-Daten. Die Funktion <code>disconnect</code> widerruft die Google-Freigabe und entfernt den gespeicherten Token sowie die importierten API-Daten. Separat erstellte Notizen, Exporte, Sicherungen und Codex-Unterhaltungen müssen am jeweiligen Speicherort verwaltet und gelöscht werden.</p>
+    <h2>7. Besuch dieser Informationsseiten</h2>
+    <p>Diese Seiten verwenden keine eigenen Tracking-Skripte, eingebetteten Videos, externen Schriftarten, Formulare oder Cookies. Sie greifen nicht auf YouTube-Kanaldaten zu.</p>
+    <p>Diese Informationsseiten werden über GitHub Pages bereitgestellt. Beim Aufruf einer dort gehosteten Seite erhält GitHub technische Zugriffsdaten; IP-Adressen werden laut GitHub zu Sicherheitszwecken protokolliert und gespeichert. GitHub verarbeitet Daten auch in den USA und weiteren Ländern. Die Aufbewahrung richtet sich nach dem Verarbeitungszweck und gesetzlichen Anforderungen; eine feste allgemeine Frist für Pages-Zugriffsprotokolle wird hier nicht zugesichert. Einzelheiten und Kontaktmöglichkeiten enthält die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutzerklärung</a>. Lokale YouTube-Daten und Google-Zugangsdateien sind kein Bestandteil dieser Website.</p>
+    <h2>8. Anfragen und Änderungen</h2>
+    <p>Fragen zu gespeicherten Daten, Berichtigung, Löschung oder zum Widerruf können an die oben genannte Kontaktadresse gerichtet werden. Bei Änderungen an Datenumfang oder Verarbeitungszweck werden diese Hinweise vor der entsprechenden Nutzung aktualisiert und erforderliche neue Freigaben eingeholt.</p>
+    <p>Ergänzend: <a href="https://policies.google.com/privacy">Google-Datenschutzerklärung</a>.</p>
+    <a class="back" href="index.html">Zur Anwendung</a>
+  </main>
+  <footer><div class="wrap"><p><a href="index.html">Anwendung</a> · <a href="nutzung.html">Nutzungsbedingungen</a></p><p>Textstand: 19. September 2026</p></div></footer>
+</body>
+</html>
